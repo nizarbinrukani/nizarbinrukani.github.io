@@ -1,235 +1,194 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/style.css">
-
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Programming Nizar</title>
-</head>
-
-<body id="home" class="home scrollspy">
-
-  <div class="navbar-fixed">
-    <nav class="indigo darken-2">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#home" class="brand-logo">WPN</a>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#clients">Clients</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio | Nizar bin Rukani</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="home">
+    <!-- navbar begin -->
+    <nav id="navbar">
+      <div class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Nizar bin Rukani</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-  </div>
+    <!-- navbar end -->
 
-  <ul class="sidenav" id="mobile-nav">
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#clients">Clients</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul>
+    <!-- jumbotron begin -->
+    <section id="jumbotron">
+      <div class="rounded-3 text-center jumbotron">
+        <div class="container-fluid pt-5">
+          <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="User Profile" width="200" class="rounded-circle img-thumbnail" />
+          <h1 class="display-4">Nizar bin Rukani</h1>
+          <p class="fs-4">Programmer | Teacher</p>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="white"
+          fill-opacity="1"
+          d="M0,128L30,122.7C60,117,120,107,180,90.7C240,75,300,53,360,64C420,75,480,117,540,128C600,139,660,117,720,101.3C780,85,840,75,900,85.3C960,96,1020,128,1080,165.3C1140,203,1200,245,1260,224C1320,203,1380,117,1410,74.7L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- jumbotron end -->
 
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="img/slider/1.png"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="img/slider/2.png"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="img/slider/3.png"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <section id="about" class="about scrollspy">
-    <div class="container">
-      <div class="row">
-        <h3 class="center light grey-text text-darken-3">About Us</h3>
-        <div class="col m6 light">
-          <h5>We Are Professionals</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed semper tortor. Maecenas tincidunt ac
-            leo in hendrerit. Nam fermentum mauris at risus commodo, vel facilisis turpis commodo. Pellentesque tempor
-            vel massa sed tempor. In sed arcu nisi. Nullam feugiat pharetra leo in pellentesque.</p>
-        </div>
-        <div class="col m6 light">
-          <p>WEB DEVELOPMENT</p>
-          <div class="progress">
-            <div class="determinate indigo" style="width: 95%"></div>
+    <!-- about begin -->
+    <section id="about">
+      <div class="container text-center">
+        <div class="row mb-3">
+          <div class="col">
+            <h2>About Me</h2>
           </div>
-          <p>MOBILE APP DEVELOPMENT</p>
-          <div class="progress">
-            <div class="determinate indigo" style="width: 80%"></div>
+        </div>
+        <div class="row justify-content-center fs-5">
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laboriosam eius atque cum optio vero dicta harum aliquam praesentium omnis.</p>
           </div>
-          <p>DESKTOP DEVELOPMENT</p>
-          <div class="progress">
-            <div class="determinate indigo" style="width: 85%"></div>
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat facere, vel, eveniet debitis inventore labore doloribus minus ex ipsa, necessitatibus voluptatibus laborum? Quam, temporibus vel.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,32L30,64C60,96,120,160,180,160C240,160,300,96,360,58.7C420,21,480,11,540,42.7C600,75,660,149,720,154.7C780,160,840,96,900,90.7C960,85,1020,139,1080,170.7C1140,203,1200,213,1260,197.3C1320,181,1380,139,1410,117.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- about end -->
 
-  <div id="clients" class="parallax-container scrollspy">
-    <div class="parallax"><img src="img/slider/4.png"></div>
-    <div class="container clients">
-      <h3 class="center light white-text">Our Clients</h3>
-      <div class="row">
-        <div class="col m4 s12 center">
-          <img src="img/clients/gojek.png">
-        </div>
-        <div class="col m4 s12 center">
-          <img src="img/clients/tokopedia.png">
-        </div>
-        <div class="col m4 s12 center">
-          <img src="img/clients/traveloka.png">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section id="services" class="services grey lighten-3 scrollspy">
-    <div class="container">
-      <div class="row">
-        <h3 class="light center grey-text text-darken-3">Our Services</h3>
-        <div class="col m4 s12">
-          <div class="card-panel center">
-            <i class="material-icons medium">web</i>
-            <h5>Web Development</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus.</p>
+    <!-- projects begin -->
+    <section id="projects">
+      <div class="container projects">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Projects</h2>
           </div>
         </div>
-        <div class="col m4 s12">
-          <div class="card-panel center">
-            <i class="material-icons medium">phone_iphone</i>
-            <h5>Mobile App</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus.</p>
-          </div>
-        </div>
-        <div class="col m4 s12">
-          <div class="card-panel center">
-            <i class="material-icons medium">desktop_mac</i>
-            <h5>Desktop App</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="portfolio" class="portfolio scrollspy">
-    <div class="container">
-      <h3 class="light center grey-text text-darken-3">Portfolio</h3>
-      <div class="row">
-        <div class="col m3 s12">
-          <img src="img/portfolio/1.png" class="responsive-img materialboxed">
-        </div>
-        <div class="col m3 s12">
-          <img src="img/portfolio/2.png" class="responsive-img materialboxed">
-        </div>
-        <div class="col m3 s12">
-          <img src="img/portfolio/3.png" class="responsive-img materialboxed">
-        </div>
-        <div class="col m3 s12">
-          <img src="img/portfolio/4.png" class="responsive-img materialboxed">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col m3 s12">
-          <img src="img/portfolio/5.png" class="responsive-img materialboxed">
-        </div>
-        <div class="col m3 s12">
-          <img src="img/portfolio/6.png" class="responsive-img materialboxed">
-        </div>
-        <div class="col m3 s12">
-          <img src="img/portfolio/1.png" class="responsive-img materialboxed">
-        </div>
-        <div class="col m3 s12">
-          <img src="img/portfolio/2.png" class="responsive-img materialboxed">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact grey lighten-3 scrollspy">
-    <div class="container">
-      <h3 class="light grey-text text-darken-3 center">Contact Us</h3>
-      <div class="row">
-        <div class="col m5 s12">
-          <div class="card-panel indigo darken-2 center white-text">
-            <i class="material-icons">email</i>
-            <h5>Contact</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus.</p>
-          </div>
-          <ul class="collection with-header">
-            <li class="collection-header">
-              <h4>Our Office</h4>
-            </li>
-            <li class="collection-item">Web Programming Nizar</li>
-            <li class="collection-item">Jl. Kulon Asem No.2, Kudus</li>
-            <li class="collection-item">Central Java, Indonesia</li>
-          </ul>
-        </div>
-        <div class="col m7 s12">
-          <form>
-            <div class="card-panel">
-              <h5>Please fill out this form</h5>
-              <div class="input-field">
-                <input type="text" name="name" id="name" class="validate" required />
-                <label for="name">Name</label>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-              <div class="input-field">
-                <input type="email" name="email" id="email" class="validate" />
-                <label for="email">Email</label>
-              </div>
-              <div class="input-field">
-                <input type="tel" name="phone" id="phone" class="validate" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
-                <label for="phone">Phone</label>
-              </div>
-              <div class="input-field">
-                <textarea name="message" id="message" class="materialize-textarea"></textarea>
-                <label for="message">Message</label>
-              </div>
-              <button class="btn indigo darken-2" type="submit">Send</button>
             </div>
-          </form>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1555532538-dcdbd01d373d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1595044426077-d36d9236d54a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="Project 4" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1598662779094-110c2bad80b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=946&q=80" class="card-img-top" alt="Project 5" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="white"
+          fill-opacity="1"
+          d="M0,160L26.7,165.3C53.3,171,107,181,160,160C213.3,139,267,85,320,96C373.3,107,427,181,480,197.3C533.3,213,587,171,640,170.7C693.3,171,747,213,800,240C853.3,267,907,277,960,266.7C1013.3,256,1067,224,1120,186.7C1173.3,149,1227,107,1280,128C1333.3,149,1387,235,1413,277.3L1440,320L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- projects end -->
 
-  <footer class="indigo darken-2 white-text center">
-    <p class="flow-text">Web Programming Nizar. Copyright 2022</p>
-  </footer>
+    <!-- contact begin -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,128L40,144C80,160,160,192,240,186.7C320,181,400,139,480,154.7C560,171,640,245,720,240C800,235,880,149,960,144C1040,139,1120,213,1200,218.7C1280,224,1360,160,1400,128L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- contact end -->
 
-  <!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+    <!-- footer begin -->
+    <footer class="bg-primary text-white text-center pb-5">
+      <p>Created by <a href="https://www.instagram.com/nizarbinrukani/?hl=en" class="text-white fw-bold">Nizar bin Rukani</a></p>
+    </footer>
+    <!-- footer end -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
 </html>
